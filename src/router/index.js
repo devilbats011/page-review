@@ -5,18 +5,18 @@ const routes = [
   {
     path: '/gallery',
     name: 'Gallery',
-    alias: '/gallery',
+    // alias: '/gallery',
     component: GalleryReview
   },
   {
     path: '/building',
     name: 'building',
+    alias: '/',
     component: () => import(/* webpackChunkName: "about" */ '../views/BuildingReview.vue')
   },
   {
     path: '/',
     name: 'Rate',
-    alias: '/rate',
     component: () => import(/* webpackChunkName: "about" */ '../views/RateReview.vue')
   }
 ]
