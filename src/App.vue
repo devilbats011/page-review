@@ -1,26 +1,85 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <main id="page-container">
+    <nav class="main-container">
+      <router-link to="/gallery"> Gallery Of Building </router-link> |
+      <router-link to="/building"> Overall Review Of Building </router-link> |
+      <router-link to="/rate"> Tenant Rate A Review Of Building </router-link>
+    </nav>
+    <article id="content-wrap">
+      <router-view />
+    </article>
+    <footer id="footer">
+      <p>Jann Properties @ 2021</p>
+
+    </footer>
+  </main>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+<style lang="scss">
+* {
+  box-sizing: border-box;
+  font-size: 1rem;
 }
-</script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.size-16 {
+  font-size: 1rem;
+}
+ul {
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: initial;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#page-container {
+  position: relative;
+
+  min-height: 97vh;
+}
+
+.main-container {
+  margin: 8px 10% 0px;
+}
+
+$footerHeight: 2.5rem; /* Footer height */
+
+#content-wrap {
+  padding-bottom: $footerHeight;
+}
+
+#footer {
+  height: $footerHeight;
+  flex-direction: column;
+  position: absolute;
+  border-top: 1px solid #000;
+  bottom: -13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+// 100-900
+.heavy {
+  font-weight: 900;
+}
+
+.review_ul {
+  display: flex;
+  list-style: none;
+  & li:nth-of-type(odd) {
+    font-weight: 300;
+  }
+  & li:nth-of-type(even) {
+    padding: 0 5px;
+    transform: translateY(1px);
+  }
 }
 </style>
