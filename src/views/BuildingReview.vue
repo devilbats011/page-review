@@ -38,9 +38,9 @@
                 <strong>Address: </strong> D-1-8, Pusat Perdagangan Kuchai, Off,
                 Jalan Kuchai Lama, 58200 Kuala Lumpur, Wilayah Persekutuan.
               </li>
-              <li><strong>Review: </strong> Very Positive</li>
-              <li><strong>Reaction: </strong> Very Good</li>
-              <li><strong>Agent: </strong> Annie Leong</li>
+              <li><strong>Review: </strong> ⭐ ⭐ ⭐ ⭐ ⭐</li>
+              <li><strong>Reaction: </strong> Overwhelming Positive </li>
+              <li><strong>Agent: </strong>Bella Astillah </li>
             </ul>
           </article>
         </section>
@@ -73,7 +73,7 @@
       </article>
       <article
         class="check"
-        style="position: relative; padding: 2rem; display: flex"
+        style="position: relative; padding: 2rem 1rem; display: flex"
       >
         <img
           src="@/assets/agent.jpg"
@@ -83,13 +83,25 @@
         />
         <section style="padding:0rem 1rem">
           <p><strong> Syarikat: </strong> Jann Properties Sbn Bhd</p>
-          <p><strong> Agent Name: </strong> Annie Leong </p>
+          <p><strong> Agent Name: </strong> Bella Astillah  </p>
+          <p><strong> Email: </strong> bella@astillah.my  </p>
           <div style="border:1px solid black;display:flex;padding:1rem">
           <p style="padding-right:12px" ><strong> Contact: </strong> +6011-333-669 </p>
           <button> + I'm Interested </button>
 
           </div>
-
+        </section>
+        <section style="padding:1rem 0rem;text-align:justify;display:flex;flex-direction:column;margin:0 auto" class="xcheck">
+          <label>Name</label>
+          <input type="text">
+          <label>Phone Number</label>
+          <input type="text">
+          <label>Email</label>
+          <input type="text">
+          <div style="margin:1rem 0" >
+          <button> Let me Know </button>  | 
+          <button> Let me Know </button>
+          </div>
         </section>
       </article>
     </section>
