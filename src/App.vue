@@ -20,7 +20,17 @@
   box-sizing: border-box;
   font-size: 1rem;
 }
+pre {
+  font-family: initial;
+}
 
+h1,h2,h3,h4,h5,h6,pre {
+  margin:0;
+  padding:0;
+}
+hr {
+  margin:0;
+}
 .size-16 {
   font-size: 1rem;
 }
@@ -45,7 +55,7 @@ a:hover {
 }
 
 .main-container {
-  margin: 8px 10% 0px;
+  margin: 8px 20% 0px;
 }
 
 $footerHeight: 2.5rem; /* Footer height */
