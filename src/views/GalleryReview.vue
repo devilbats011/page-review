@@ -1,6 +1,6 @@
 <template>
   <main class="main-container">
-    <ul class="review_ul">
+    <ul class="review_ul" style="margin-top:1rem">
       <li class="">Gallery</li>
     </ul>
     <article class="main">

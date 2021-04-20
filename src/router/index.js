@@ -11,12 +11,13 @@ const routes = [
   {
     path: '/building',
     name: 'building',
-    alias: '/',
+   
     component: () => import(/* webpackChunkName: "about" */ '../views/BuildingReview.vue')
   },
   {
-    path: '/',
+    path: '/rate',
     name: 'Rate',
+    alias: '/',
     component: () => import(/* webpackChunkName: "about" */ '../views/RateReview.vue')
   }
 ]

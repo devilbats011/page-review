@@ -83,6 +83,7 @@ $footerHeight: 2.5rem; /* Footer height */
 
 .review_ul {
   display: flex;
+  margin:0px;
   list-style: none;
   & li:nth-of-type(odd) {
     font-weight: 300;

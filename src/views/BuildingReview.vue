@@ -97,7 +97,7 @@
             </p>
             <div style="margin: 0.5rem 0">
               <button class="btn">+ Follow Me</button>
-              <div class="divider" ></div>
+              <div class="divider"></div>
               <button class="btn">@ Whatsapp</button>
             </div>
 
@@ -195,28 +195,89 @@
         <hr class="detail-hr" />
         <section style="padding: 2rem 0">
           <section class="grid-container">
-            <h3>
-              Overall Review: <span>⭐ ⭐ ⭐ , Average 5/3 | Positive</span>
-            </h3>
-
-            <h5>Interior / Units:</h5>
+            <h3>Overall Review:</h3>
+            <div style="transform: translateY(-4px)">
+              ⭐ ⭐ ⭐ ⭐ ⭐ , Average 4/5 | Positive
+            </div>
+            <hr class="detail-hr" style="margin-bottom: 1rem" />
+            <p>Interior / Units:</p>
             <div>⭐ ⭐ ⭐ ⭐ ⭐</div>
-            <h5>Cleanliness:</h5>
+            <p>Cleanliness:</p>
             <div>⭐ ⭐ ⭐ ⭐</div>
-            <h5>Cleanliness:</h5>
-            <div>⭐ ⭐ ⭐ </div>
-            <h5>Common Areas:</h5>
-            <div>⭐ ⭐ </div>
-            <h5>Transport:</h5>
-            <div>⭐ </div>
+            <p>Facilities:</p>
+            <div>⭐ ⭐ ⭐</div>
+            <p>Common Areas:</p>
+            <div>⭐ ⭐</div>
+            <p>Transport:</p>
+            <div>⭐</div>
           </section>
-          <br><br>
+          <br /><br />
+          <section>
             <label for="filters">Filters: </label>
             <select name="filter" id="filters">
               <option value="">Top Match</option>
-              <option value=""></option>
-              <option value="saab"></option>
+              <option value="recent">Recent</option>
             </select>
+          </section>
+          <section style="margin: 2rem 0">
+            <div style="display: flex">
+              <img
+                src="@/assets/agent.jpg"
+                alt="agent.jpg"
+                class="review-avatar"
+              />
+              <p style="line-height: 1.4; margin-left: 1rem">Sonja</p>
+            </div>
+            <div class="review-grid-container">
+              <div class="review-grid-item-1" style="margin: 10px 0 16px 0">
+                <!--  &star; &starf;  -->
+                ⭐ ⭐ ⭐ ⭐ ⭐
+                <h3 style="position: relative; top: 3px; margin: 0 1rem">
+                  Overall 5/5
+                </h3>
+              </div>
+              <div class="review-grid-item-1">
+                ⭐ ⭐ ⭐ ⭐ ⭐
+                <p style="position: relative; top: 3px; margin: 0 1rem">
+                  Interior / Units
+                </p>
+              </div>
+              <div class="review-grid-item-1">
+                ⭐ ⭐ ⭐ ⭐ ⭐
+                <p style="position: relative; top: 3px; margin: 0 1rem">
+                  Cleanliness
+                </p>
+              </div>
+              <div class="review-grid-item-1">
+                ⭐ ⭐ ⭐ ⭐ ⭐
+                <p style="position: relative; top: 3px; margin: 0 1rem">
+                  Common Areas
+                </p>
+              </div>
+              <div class="review-grid-item-1">
+                ⭐ ⭐ ⭐ ⭐ ⭐
+                <p style="position: relative; top: 3px; margin: 0 1rem">
+                  Transport
+                </p>
+              </div>
+            </div>
+            <div style="margin: 0.5rem 0;padding-right:2rem;font-size:14px" >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              quis lorem ut libero malesuada feugiat. Curabitur non nulla sit
+              amet nisl tempus convallis quis ac lectus.
+            </div>
+            <p style="font-size: smaller">Reviewed on December 26, 2020</p>
+            <p>People found this helpful</p>
+
+            <div style="margin: 0.5rem 0; display: flex">
+              <button class="btn" style="padding: 0 2rem">Helpful</button>
+              <hr class="divider" style="transform: translateY(0px)" />
+              <p style="cursor: pointer">Report Abuse</p>
+            </div>
+          </section>
+          <section style="text-align:center;transform:translateY(26px)" >
+            <button> Load More Reviews</button>
+          </section>
         </section>
       </article>
     </section>
@@ -228,15 +289,51 @@ export default {};
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 $color: red;
+
+.review-avatar {
+  border: 1px solid #000;
+  border-radius: 200px;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.5rem;
+}
+
+.review-grid {
+  &-container {
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 100px auto;
+    & > h3 {
+      margin-bottom: 1rem;
+    }
+    & > div {
+      transform: translateY(-4px);
+    }
+    & > hr {
+      grid-column: 1 / span 2;
+    }
+  }
+  &-item-1 {
+    display: flex;
+    grid-column: 1 / span 2;
+  }
+}
+
 .grid {
   &-container {
     padding: 0;
     list-style: none;
     display: grid;
-    grid-template-columns: 150px auto;
+    grid-template-columns: 120px auto;
     & > h3 {
-      grid-column: 1 / span 2;
       margin-bottom: 1rem;
+    }
+    & > div {
+      transform: translateY(3px);
+    }
+    & > hr {
+      grid-column: 1 / span 2;
     }
   }
 }
