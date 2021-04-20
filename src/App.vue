@@ -10,7 +10,6 @@
     </article>
     <footer id="footer">
       <p>Jann Properties @ 2021</p>
-
     </footer>
   </main>
 </template>
@@ -24,12 +23,18 @@ pre {
   font-family: initial;
 }
 
-h1,h2,h3,h4,h5,h6,pre {
-  margin:0;
-  padding:0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre {
+  margin: 0;
+  padding: 0;
 }
 hr {
-  margin:0;
+  margin: 0;
 }
 .size-16 {
   font-size: 1rem;
@@ -83,7 +88,7 @@ $footerHeight: 2.5rem; /* Footer height */
 
 .review_ul {
   display: flex;
-  margin:0px;
+  margin: 0px;
   list-style: none;
   & li:nth-of-type(odd) {
     font-weight: 300;
@@ -92,5 +97,44 @@ $footerHeight: 2.5rem; /* Footer height */
     padding: 0 5px;
     transform: translateY(1px);
   }
+}
+
+// utility
+.m-_5 {
+  margin: 0,5rem;
+}
+.my-_5 {
+  margin: 0.5rem 0;
+}
+.mx-_5 {
+  margin: 0 0.5rem;
+}
+
+.mt-_5{
+  margin-top: .5rem;
+}
+
+.mb-_5{
+  margin-bottom: .5rem;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+.my-1 {
+  margin: 1rem 0;
+}
+.mx-1 {
+  margin: 0 1rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+.py-1 {
+  padding: 1rem 0;
+}
+.px-1 {
+  padding: 0 1rem;
 }
 </style>

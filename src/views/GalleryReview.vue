@@ -3,9 +3,7 @@
     <ul class="review_ul" style="margin-top:1rem">
       <li class="">Gallery</li>
     </ul>
-    <article class="main">
 
-    </article>
   </main>
 </template>
 <script>

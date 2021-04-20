@@ -42,7 +42,7 @@
                 <strong>Overall Rating: </strong> Average 5/5 | Overwhelming
                 Positive
               </li>
-              <li><strong>Agent: </strong>Bella Astillah</li>
+              <!-- <li><strong>Agent: </strong>Bella Astillah</li> -->
             </ul>
           </div>
         </section>
@@ -118,18 +118,18 @@
         </section>
         <section
           style="
-            padding: 1rem 1rem;
+            padding: 0rem 1rem;
             text-align: justify;
             display: flex;
             flex-direction: column;
             margin: 0;
           "
         >
-          <label>Name</label>
+          <label class="my-_5">Name</label>
           <input type="text" placeholder="name" />
-          <label>Phone Number</label>
+          <label class="my-_5">Phone Number</label>
           <input type="text" placeholder="+1234567890" />
-          <label>Email</label>
+          <label class="my-_5">Email</label>
           <input type="email" placeholder="score@yahoo.my" />
           <div style="margin: 1rem 0">
             <button style="padding: 0.4rem 0.6rem">+ I'm Interested</button>
@@ -341,6 +341,7 @@ $color: red;
 .btn {
   cursor: pointer;
   padding: 0.4rem 0.8rem;
+  margin: 0.4rem 0;
 }
 
 .divider {
