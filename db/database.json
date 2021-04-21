@@ -1,7 +1,9 @@
 {
   "reviews": [
     {
-      "name": "wann",
+      "id": 1,
+      "overall": 4,
+      "people":[{"name": "wann",
       "clealiness": 2,
       "common_areas": 4,
       "facilities": 2,
@@ -9,8 +11,29 @@
       "overall": 0,
       "transport": 1,
       "tittle": "cool",
-      "comment": "cooooool",
-      "id": 1
+      "comment": "cooooool"},
+
+      {"name": "xxx",
+      "clealiness": 2,
+      "common_areas": 4,
+      "facilities": 2,
+      "interior": 3,
+      "overall": 0,
+      "transport": 1,
+      "tittle": "cool",
+      "comment": "cooooool"},
+
+      {"name": "xzxzx",
+        "clealiness": 2,
+        "common_areas": 4,
+        "facilities": 2,
+        "interior": 3,
+        "overall": 0,
+        "transport": 1,
+        "tittle": "cool",
+        "comment": "cooooool"}
+    ]
+
     },
     {
       "name": "uiqwh",
@@ -23,6 +46,55 @@
       "tittle": "qwqww",
       "comment": "ewfsewfcwsfcsws",
       "id": 2
+    }
+  ],
+  "gallery": [
+    {
+      "id_gallery": "1",
+      "id_review": "1",
+      "id_building": "1",
+      "name": "KL Gateway Residence",
+      "pic": "kl-1.jpg"
+    },
+    {
+      "id_gallery": "2",
+      "id_review": "2",
+      "id_building": "2",
+      "name": "Palmville Resort Condominium",
+      "pic": "pal-resort.jpg"
+    },
+    {
+      "id_gallery": "3",
+      "id_review": "3",
+      "id_building": "3",
+      "name": "Novum Bangsar South",
+      "pic": "bangsar-south.jpg"
+    }
+  ],
+  "building": [
+    {
+      "id":"1",
+      "type":"condominium",
+      "extra_pic": [
+        "kl-1.jpg",
+        "sample-room-1.jpg"
+      ],
+      "sales_price": "RM 2000 ~ RM4000",
+      "syarikat": "Jann Properties Sbn Bhd",
+      "agent_name": "Bella Astillah",
+      "agent_email": "bella@astillah.my",
+      "agent_contact": "+6011-333-669",
+      "address": "D-1-8, Pusat Perdagangan Kuchai, Off, Jalan Kuchai Lama, 58200 Kuala Lumpur, Wilayah Persekutuan",
+      "detail": {
+        "type":"Service Residence For Sale",
+        "tenure":"Freehold",
+        "floor_size":"808 sqft",
+        "furnishing": "Fully Furnished",
+        "psf": "RM 434.27 psf",
+        "listing_id": "32691299"
+      },
+      "description": "If you’re a fan of the author, Philip Roth, get your copy as soon as possible. It’s over 900 pages. The biographer has done a brilliant and genius job in discecting the life and career of Roth. The book included rare photographs. To read this book, I’m going to have take my time to enjoy the richness. Philip Roth would be pleased. It is the definitive biography of a legendary author and writer. Roth was always on the shortlist for the most prestigious prize, Nobel Prize in Literature. He never won the Nobel Prize but he was awarded the National Medal of the Arts and his literature has inspired films like “The Humsn Stain;” “Portnoy’s Complaint;” Goodbye, Columbus” and “The Plot Against America. Roth was a complex man not just from his writings but his relationships with others. He had long term relationship and short marriage to British actress, Claire Bloom CBE. Roth died without a wife or children. He had relatives but largely lived in Connecticut and New York City. As a man, Roth was private but not reclusive like Salinger. He kept writing until he was done and out of ideas. He was a literary genius but deeply complex. His literature will live long on in American Jewish literature."
+
     }
   ]
 }

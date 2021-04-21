@@ -1,9 +1,9 @@
 <template>
   <main id="page-container">
     <nav class="main-container">
-      <router-link to="/gallery"> Gallery Of Building </router-link> |
-      <router-link to="/building"> Overall Review Of Building </router-link> |
-      <router-link to="/rate"> Tenant Rate A Review Of Building </router-link>
+      <router-link to="/gallery"> Gallery Of Building </router-link> 
+      <!-- <router-link to="/building"> Overall Review Of Building </router-link> | -->
+      <!-- <router-link to="/rate"> Tenant Rate A Review Of Building </router-link> -->
     </nav>
     <article id="content-wrap">
       <router-view />

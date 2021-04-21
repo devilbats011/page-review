@@ -9,7 +9,7 @@ const routes = [
     component: GalleryReview
   },
   {
-    path: '/building',
+    path: '/building/:n/:b/:r',
     name: 'building',
    
     component: () => import(/* webpackChunkName: "about" */ '../views/BuildingReview.vue')

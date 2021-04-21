@@ -3,21 +3,23 @@
     <ul class="review_ul">
       <li class="">Gallery</li>
       <li>></li>
-      <li class="">Building Review ( KL Residencies )</li>
+      <li class="">{{ $route.params.n }}</li>
     </ul>
     <section class="main">
+        <!-- {{ $route.params.n }}{{ $route.params.b }} -->
       <div style="float: left; border: 1px solid green; padding: 0.1rem 0.6rem">
-        KL Residencies
+        {{payload_building.type}}
+        <!-- {{ require('@/assets/'+payload_building.extra_pic[0])}} -->
       </div>
-      <div style="float: right">?ask a question ^Share</div>
+      <div style="float: right;">?Give review &nbsp;&nbsp; ^Share</div>
       <div style="clear: both"></div>
       <div style="margin: 1.2rem 0"></div>
 
       <article style="display: flex; height: 350px; postion: relative">
         <section style="width: 60%; position: relative" class="check">
           <img
-            src="@/assets/sample-room-1.jpg"
-            alt="@/assets/sample-room-1.jpg"
+            :src="require('@/assets/'+payload_building.extra_pic[0])"
+            alt="@/assets/..."
             style="width: 100%; height: 100%"
           />
         </section>
@@ -26,7 +28,7 @@
         >
           <div style="height: 60%" class="check">
             <img
-              src="@/assets/sample-table-bottle.jpg"
+              :src="payload_building.extra_pic[1] == undefined ? 'none' : require('@/assets/'+payload_building.extra_pic[1])"
               alt="@/assets/sample-table-bottle.jpg"
               style="width: 100%; height: 100%"
             />
@@ -34,10 +36,9 @@
           <div style="height: 40%">
             <ul style="padding: 0; list-style: none">
               <li>
-                <strong>Address: </strong> D-1-8, Pusat Perdagangan Kuchai, Off,
-                Jalan Kuchai Lama, 58200 Kuala Lumpur, Wilayah Persekutuan.
+                <strong>Address: </strong> {{payload_building.address}}
               </li>
-              <li><strong>Overall Review: </strong> <Stars/></li>
+              <li><strong>Overall Review: </strong> <Stars /></li>
               <li>
                 <strong>Overall Rating: </strong> Average 5/5 | Overwhelming
                 Positive
@@ -70,7 +71,7 @@
             padding-left: 1rem;
           "
         >
-          RM 2000 ~ RM4000
+          {{payload_building.sales_price}}
         </div>
       </article>
       <article
@@ -89,11 +90,11 @@
             style="height: 230px; width: 230px; margin-right: 1rem"
           />
           <div style="padding: 0 4px">
-            <p><strong> Syarikat: </strong> Jann Properties Sbn Bhd</p>
-            <p><strong> Agent Name: </strong> Bella Astillah</p>
-            <p><strong> Email: </strong> bella@astillah.my</p>
+            <p><strong> Syarikat: </strong> {{payload_building.syarikat}} </p>
+            <p><strong> Agent Name: </strong> {{payload_building.agent_name}} </p>
+            <p><strong> Email: </strong>{{payload_building.agent_email}}</p>
             <p style="padding-right: 12px; font-size: 15px">
-              <strong> Contact: </strong> +6011-333-669
+              <strong> Contact: </strong> {{payload_building.agent_contact}}
             </p>
             <div style="margin: 0.5rem 0">
               <button class="btn">+ Follow Me</button>
@@ -139,38 +140,39 @@
       <article class="check" style="margin: 1rem 0; padding: 1rem 0.4rem">
         <h5><span> Detail </span> <v-icon icon="angle-double-down" /></h5>
         <hr class="detail-hr" />
-        <section class="detail-section">
+        <!-- -->
+          <section class="detail-section">
           <div class="detail-section-item">
             <div>Type</div>
-            <div>Service Residence For Sale</div>
+            <div>{{payload_building.detail.type}}</div>
             <hr />
           </div>
           <div class="detail-section-item">
             <div>Tenure</div>
-            <div>Freehold</div>
+            <div>{{payload_building.detail.tenure}}</div>
             <hr />
           </div>
           <div class="detail-section-item">
             <div>Floor Size</div>
-            <div>808 sqft</div>
+            <div>{{payload_building.detail.floor_size}}</div>
             <hr />
           </div>
           <div class="detail-section-item">
             <div>Furnishing</div>
-            <div>Fully Furnished</div>
+            <div>{{payload_building.detail.furnishing}}</div>
             <hr />
           </div>
           <div class="detail-section-item">
             <div>PSF</div>
-            <div>RM 434.27 psf</div>
+            <div>{{payload_building.detail.psf}}</div>
             <hr />
           </div>
           <div class="detail-section-item">
             <div>Listing ID</div>
-            <div>32691299</div>
+            <div>{{payload_building.detail.listing_id}}</div>
             <hr />
           </div>
-        </section>
+        </section> 
       </article>
 
       <article class="check" style="margin: 1rem 0; padding: 1rem 0.4rem">
@@ -178,14 +180,7 @@
         <hr class="detail-hr" />
         <section style="padding: 2rem 0">
           <p>
-            Lorem ipsum dolor sit amet Praesent sapien massa, convallis a
-            pellentesque nec, egestas non nisi. Curabitur non nulla sit amet
-            nisl tempus convallis quis ac lectus. Curabitur aliquet quam id dui
-            posuere blandit.
-            <br /><br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-            magna justo, lacinia eget consectetur sed, convallis at tellus. Sed
-            porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat.
+            {{payload_building.description}}
           </p>
         </section>
       </article>
@@ -196,20 +191,20 @@
         <section style="padding: 2rem 0">
           <section class="grid-container">
             <h3>Overall Review:</h3>
-            <div style="transform: translateY(-4px)">
-              <Stars/>, Average 4/5 | Positive
+            <div style="transform: translateY(-0px)">
+              <Stars /><span>  Average {{payload_review.overall}}/5 | Positive </span>
             </div>
             <hr class="detail-hr" style="margin-bottom: 1rem" />
             <p>Interior / Units:</p>
-            <Stars/>
+            <Stars />
             <p>Cleanliness:</p>
-            <Stars/>
+            <Stars />
             <p>Facilities:</p>
-            <Stars/>
+            <Stars />
             <p>Common Areas:</p>
-            <Stars/>
+            <Stars />
             <p>Transport:</p>
-            <Stars/>
+            <Stars />
           </section>
           <br /><br />
           <section>
@@ -219,52 +214,52 @@
               <option value="recent">Recent</option>
             </select>
           </section>
-          <section style="margin: 2rem 0">
+          <section style="margin: 2rem 0"   v-for="(review, key) in payload_review.people" :key="key">
             <div style="display: flex">
               <img
                 src="@/assets/agent.jpg"
                 alt="agent.jpg"
                 class="review-avatar"
               />
-              <p style="line-height: 1.4; margin-left: 1rem">Sonja</p>
+              <p style="line-height: 1.4; margin-left: 1rem">{{review.name}}</p>
             </div>
             <div class="review-grid-container">
               <div class="review-grid-item-1" style="margin: 10px 0 16px 0">
-                <Stars/>
-                <h3 style="position: relative; top: 3px; margin: 0 1rem">
-                  Overall 5/5 | Overwhelming Positive
-
+                <Stars />
+                <h3
+                  style="position: relative; top: 0px; margin: 0 1rem"
+                  title="overall: 5/5"
+                >
+                  {{review.tittle}}
                 </h3>
               </div>
               <div class="review-grid-item-1">
-                <Stars/>
-                <p style="position: relative; top: 3px; margin: 0 1rem">
+                <Stars />
+                <p style="position: relative; top: 0px; margin: 0 1rem">
                   Interior / Units
                 </p>
               </div>
               <div class="review-grid-item-1">
-                <Stars/>
-                <p style="position: relative; top: 3px; margin: 0 1rem">
+                <Stars />
+                <p style="position: relative; top: 0px; margin: 0 1rem">
                   Cleanliness
                 </p>
               </div>
               <div class="review-grid-item-1">
-                <Stars/>
-                <p style="position: relative; top: 3px; margin: 0 1rem">
+                <Stars />
+                <p style="position: relative; top: 0px; margin: 0 1rem">
                   Common Areas
                 </p>
               </div>
               <div class="review-grid-item-1">
-               <Stars/>
-                <p style="position: relative; top: 3px; margin: 0 1rem">
+                <Stars />
+                <p style="position: relative; top: 0px; margin: 0 1rem">
                   Transport
                 </p>
               </div>
             </div>
-            <div style="margin: 0.5rem 0;padding-right:2rem;font-size:14px" >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-              quis lorem ut libero malesuada feugiat. Curabitur non nulla sit
-              amet nisl tempus convallis quis ac lectus.
+            <div style="margin: 0.5rem 0; padding-right: 2rem; font-size: 14px">
+              {{review.comment}}
             </div>
             <p style="font-size: smaller">Reviewed on December 26, 2020</p>
             <p>People found this helpful</p>
@@ -275,8 +270,8 @@
               <p style="cursor: pointer">Report Abuse</p>
             </div>
           </section>
-          <section style="text-align:center;transform:translateY(26px)" >
-            <button> Load More Reviews</button>
+          <section style="text-align: center; transform: translateY(26px)">
+            <button>Load More Reviews</button>
           </section>
         </section>
       </article>
@@ -284,11 +279,46 @@
   </main>
 </template>
 <script>
-import Stars from '@/components/BuildingReviewStars'
+import Stars from "@/components/BuildingReviewStars";
+import axios from "axios";
 
 export default {
   components: { Stars },
+  data: function () {
+    return {
+      id_building: this.$route.params.b,
+      id_review: this.$route.params.r,
+      payload_building : {extra_pic:["no_picture.png"],detail:{}},
+      payload_review : {people:[{}]},
+      
+    };
+  },
+  methods: {
+    async getPic(num){
+      if (this.payload_building.extra_pic.length == 0) return
 
+      const temp = await this.payload_building.extra_pic[num]
+      console.log(this.payload_building,'temp:', temp)
+
+      // console.log(require("@/assets/"+temp))
+      // return require("@/assets/"+temp)
+      return null
+    }
+  },
+  async mounted(){
+    console.log("???")
+      this.payload_building = await axios.get(`http://localhost:3000/building/${this.id_building}`).then(function (response) {
+      // handle success
+      console.log(response.data);
+      return response.data;
+    });
+
+    this.payload_review = await axios.get(`http://localhost:3000/reviews/${this.id_review}`).then(function (response) {
+      // handle success
+      console.log(response.data);
+      return response.data;
+    });
+  }
 };
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -327,9 +357,7 @@ $color: red;
 }
 
 .grid {
-  
   &-container {
-    
     padding: 0;
     list-style: none;
     display: grid;
@@ -338,7 +366,7 @@ $color: red;
       margin-bottom: 1rem;
     }
     & > div {
-      transform: translateY(3px);
+      transform: translateY(0.5rem);
     }
     & > hr {
       grid-column: 1 / span 2;
