@@ -23,6 +23,10 @@ pre {
   font-family: initial;
 }
 
+input[type=text] {
+    padding: .4rem;
+}
+
 h1,
 h2,
 h3,

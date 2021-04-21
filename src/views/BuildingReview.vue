@@ -37,7 +37,7 @@
                 <strong>Address: </strong> D-1-8, Pusat Perdagangan Kuchai, Off,
                 Jalan Kuchai Lama, 58200 Kuala Lumpur, Wilayah Persekutuan.
               </li>
-              <li><strong>Overall Review: </strong> ⭐ ⭐ ⭐ ⭐ ⭐</li>
+              <li><strong>Overall Review: </strong> <Stars/></li>
               <li>
                 <strong>Overall Rating: </strong> Average 5/5 | Overwhelming
                 Positive
@@ -197,19 +197,19 @@
           <section class="grid-container">
             <h3>Overall Review:</h3>
             <div style="transform: translateY(-4px)">
-              ⭐ ⭐ ⭐ ⭐ ⭐ , Average 4/5 | Positive
+              <Stars/>, Average 4/5 | Positive
             </div>
             <hr class="detail-hr" style="margin-bottom: 1rem" />
             <p>Interior / Units:</p>
-            <div>⭐ ⭐ ⭐ ⭐ ⭐</div>
+            <Stars/>
             <p>Cleanliness:</p>
-            <div>⭐ ⭐ ⭐ ⭐</div>
+            <Stars/>
             <p>Facilities:</p>
-            <div>⭐ ⭐ ⭐</div>
+            <Stars/>
             <p>Common Areas:</p>
-            <div>⭐ ⭐</div>
+            <Stars/>
             <p>Transport:</p>
-            <div>⭐</div>
+            <Stars/>
           </section>
           <br /><br />
           <section>
@@ -230,32 +230,32 @@
             </div>
             <div class="review-grid-container">
               <div class="review-grid-item-1" style="margin: 10px 0 16px 0">
-                <!--  &star; &starf;  -->
-                ⭐ ⭐ ⭐ ⭐ ⭐
+                <Stars/>
                 <h3 style="position: relative; top: 3px; margin: 0 1rem">
-                  Overall 5/5
+                  Overall 5/5 | Overwhelming Positive
+
                 </h3>
               </div>
               <div class="review-grid-item-1">
-                ⭐ ⭐ ⭐ ⭐ ⭐
+                <Stars/>
                 <p style="position: relative; top: 3px; margin: 0 1rem">
                   Interior / Units
                 </p>
               </div>
               <div class="review-grid-item-1">
-                ⭐ ⭐ ⭐ ⭐ ⭐
+                <Stars/>
                 <p style="position: relative; top: 3px; margin: 0 1rem">
                   Cleanliness
                 </p>
               </div>
               <div class="review-grid-item-1">
-                ⭐ ⭐ ⭐ ⭐ ⭐
+                <Stars/>
                 <p style="position: relative; top: 3px; margin: 0 1rem">
                   Common Areas
                 </p>
               </div>
               <div class="review-grid-item-1">
-                ⭐ ⭐ ⭐ ⭐ ⭐
+               <Stars/>
                 <p style="position: relative; top: 3px; margin: 0 1rem">
                   Transport
                 </p>
@@ -284,7 +284,12 @@
   </main>
 </template>
 <script>
-export default {};
+import Stars from '@/components/BuildingReviewStars'
+
+export default {
+  components: { Stars },
+
+};
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
@@ -300,6 +305,7 @@ $color: red;
 
 .review-grid {
   &-container {
+    grid-row-gap: 0.3rem;
     padding: 0;
     list-style: none;
     display: grid;
@@ -321,7 +327,9 @@ $color: red;
 }
 
 .grid {
+  
   &-container {
+    
     padding: 0;
     list-style: none;
     display: grid;

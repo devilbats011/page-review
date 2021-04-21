@@ -1,0 +1,28 @@
+{
+  "reviews": [
+    {
+      "name": "wann",
+      "clealiness": 2,
+      "common_areas": 4,
+      "facilities": 2,
+      "interior": 3,
+      "overall": 0,
+      "transport": 1,
+      "tittle": "cool",
+      "comment": "cooooool",
+      "id": 1
+    },
+    {
+      "name": "uiqwh",
+      "clealiness": 3,
+      "common_areas": 5,
+      "facilities": 4,
+      "interior": 1,
+      "overall": 3,
+      "transport": 2,
+      "tittle": "qwqww",
+      "comment": "ewfsewfcwsfcsws",
+      "id": 2
+    }
+  ]
+}
