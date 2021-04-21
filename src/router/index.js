@@ -19,6 +19,11 @@ const routes = [
     name: 'Rate',
     alias: '/',
     component: () => import(/* webpackChunkName: "about" */ '../views/RateReview.vue')
+  },
+  {
+    path: '/redirect-review',
+    name: 'RedirectReview',
+    component: () => import('../views/RedirectReview.vue')
   }
 ]
 
