@@ -2,50 +2,98 @@
   "reviews": [
     {
       "id": 1,
-      "overall": 4,
-      "people":[{"name": "wann",
-      "clealiness": 2,
-      "common_areas": 4,
-      "facilities": 2,
-      "interior": 3,
-      "overall": 0,
-      "transport": 1,
-      "tittle": "cool",
-      "comment": "cooooool"},
-
-      {"name": "xxx",
-      "clealiness": 2,
-      "common_areas": 4,
-      "facilities": 2,
-      "interior": 3,
-      "overall": 0,
-      "transport": 1,
-      "tittle": "cool",
-      "comment": "cooooool"},
-
-      {"name": "xzxzx",
-        "clealiness": 2,
-        "common_areas": 4,
-        "facilities": 2,
-        "interior": 3,
-        "overall": 0,
-        "transport": 1,
-        "tittle": "cool",
-        "comment": "cooooool"}
-    ]
-
+      "overall": 5,
+      "reaction": "Overwhelming Positive"
     },
     {
-      "name": "uiqwh",
-      "clealiness": 3,
-      "common_areas": 5,
-      "facilities": 4,
-      "interior": 1,
+      "id": 2,
+      "overall": 4,
+      "reaction": "Very Positive"
+    },
+    {
+      "id": 3,
       "overall": 3,
-      "transport": 2,
-      "tittle": "qwqww",
-      "comment": "ewfsewfcwsfcsws",
+      "reaction": "Positive"
+    }
+  ],
+  "reviews_people": [
+    {
+      "id_building": "2",
+      "name": "",
+      "clealiness": 0,
+      "common_areas": 0,
+      "facilities": 0,
+      "interior": 0,
+      "overall": 0,
+      "transport": 0,
+      "tittle": "",
+      "comment": "",
+      "id": 1
+    },
+    {
+      "id_building": "2",
+      "name": "wan afnan",
+      "clealiness": 4,
+      "common_areas": 4,
+      "facilities": 3,
+      "interior": 3,
+      "overall": 3.6,
+      "transport": 4,
+      "tittle": "fond memories",
+      "comment": "Family ,secure and happiness",
       "id": 2
+    },
+    {
+      "id_building": "3",
+      "name": "Jimmy",
+      "clealiness": 3,
+      "common_areas": 3,
+      "facilities": 3,
+      "interior": 3,
+      "overall": 3,
+      "transport": 3,
+      "tittle": "The place a bit highprice",
+      "comment": "All good but demanding price.",
+      "id": 3
+    },
+    {
+      "id_building": "1",
+      "name": "my test name",
+      "clealiness": 5,
+      "common_areas": 5,
+      "facilities": 5,
+      "interior": 5,
+      "overall": 5,
+      "transport": 5,
+      "tittle": "This place is rock!",
+      "comment": "",
+      "id": 4
+    },
+    {
+      "id_building": "1",
+      "name": "HM",
+      "clealiness": 1,
+      "common_areas": 4,
+      "facilities": 2,
+      "interior": 1,
+      "overall": 2.2,
+      "transport": 3,
+      "tittle": "Hmmm",
+      "comment": "hmmm hmmm",
+      "id": 5
+    },
+    {
+      "id_building": "1",
+      "name": "felicia",
+      "clealiness": 5,
+      "common_areas": 5,
+      "facilities": 5,
+      "interior": 5,
+      "overall": 5,
+      "transport": 5,
+      "tittle": "Good Place",
+      "comment": "Very Good Place",
+      "id": 6
     }
   ],
   "gallery": [
@@ -73,8 +121,8 @@
   ],
   "building": [
     {
-      "id":"1",
-      "type":"condominium",
+      "id": "1",
+      "type": "elite condominium",
       "extra_pic": [
         "kl-1.jpg",
         "sample-room-1.jpg"
@@ -84,17 +132,65 @@
       "agent_name": "Bella Astillah",
       "agent_email": "bella@astillah.my",
       "agent_contact": "+6011-333-669",
+      "agent_pic": "agent.jpg",
       "address": "D-1-8, Pusat Perdagangan Kuchai, Off, Jalan Kuchai Lama, 58200 Kuala Lumpur, Wilayah Persekutuan",
       "detail": {
-        "type":"Service Residence For Sale",
-        "tenure":"Freehold",
-        "floor_size":"808 sqft",
+        "type": "Service Residence For Sale",
+        "tenure": "Freehold",
+        "floor_size": "808 sqft",
         "furnishing": "Fully Furnished",
         "psf": "RM 434.27 psf",
         "listing_id": "32691299"
       },
       "description": "If you’re a fan of the author, Philip Roth, get your copy as soon as possible. It’s over 900 pages. The biographer has done a brilliant and genius job in discecting the life and career of Roth. The book included rare photographs. To read this book, I’m going to have take my time to enjoy the richness. Philip Roth would be pleased. It is the definitive biography of a legendary author and writer. Roth was always on the shortlist for the most prestigious prize, Nobel Prize in Literature. He never won the Nobel Prize but he was awarded the National Medal of the Arts and his literature has inspired films like “The Humsn Stain;” “Portnoy’s Complaint;” Goodbye, Columbus” and “The Plot Against America. Roth was a complex man not just from his writings but his relationships with others. He had long term relationship and short marriage to British actress, Claire Bloom CBE. Roth died without a wife or children. He had relatives but largely lived in Connecticut and New York City. As a man, Roth was private but not reclusive like Salinger. He kept writing until he was done and out of ideas. He was a literary genius but deeply complex. His literature will live long on in American Jewish literature."
-
+    },
+    {
+      "id": "2",
+      "type": "average condominium",
+      "extra_pic": [
+        "pal-resort.jpg",
+        "pal-resort-2.jpg"
+      ],
+      "sales_price": "RM 1000 ~ RM2000",
+      "syarikat": "Jonas Sbn Bhd",
+      "agent_name": "Jonas John",
+      "agent_pic": "agent-2.jpg",
+      "agent_email": "Jonas@john.my",
+      "agent_contact": "+6011-333-669",
+      "address": "D-9-9, Bangsar, Off, Jalan Bangsar North, 58200 Kuala Lumpur, Wilayah Persekutuan",
+      "detail": {
+        "type": "Residence For Sale",
+        "tenure": "leasehold",
+        "floor_size": "708 sqft",
+        "furnishing": "Partly Furnished",
+        "psf": "RM 354.27 psf",
+        "listing_id": "32691288"
+      },
+      "description": "Quisque velit nisi, pretium ut lacinia in, elementum id enim. Pellentesque in ipsum id orci porta dapibus.      Curabitur aliquet quam id dui posuere blandit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
+    },
+    {
+      "id": "3",
+      "type": "Elite condominium",
+      "extra_pic": [
+        "bangsar-south.jpg",
+        "bangsar-south-2.jpg"
+      ],
+      "sales_price": "RM 2500 ~ RM4500",
+      "syarikat": "Jann Properties Sbn Bhd",
+      "agent_name": "Claire Watson",
+      "agent_pic": "agent-3.png",
+      "agent_email": "Claire@Watson.com",
+      "agent_contact": "+6071-993-669",
+      "address": "D-7-7, Bangsar South, Off, Jalan Bangsar South, 58200 Kuala Lumpur, Wilayah Persekutuan",
+      "detail": {
+        "type": "Residence For Sale",
+        "tenure": "leasehold",
+        "floor_size": "910 sqft",
+        "furnishing": "Fully Furnished",
+        "psf": "RM 455.55 psf",
+        "listing_id": "32611277"
+      },
+      "description": "Donec rutrum congue leo eget malesuada. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.Donec rutrum congue leo eget malesuada. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Sed porttitor lectus nibh.m id dui posuere blandit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
     }
   ]
 }

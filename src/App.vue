@@ -19,6 +19,9 @@
   box-sizing: border-box;
   font-size: 1rem;
 }
+body{
+  background-color:white;// #F4E9DF;
+}
 pre {
   font-family: initial;
 }
@@ -57,10 +60,13 @@ a:hover {
   cursor: pointer;
 }
 
+.text-grey {
+  color:#3e3e3e;
+}
 #page-container {
   position: relative;
-
-  min-height: 97vh;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .main-container {

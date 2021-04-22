@@ -4,21 +4,6 @@
       <li class="">Gallery</li>
     </ul>
     <article class="main">
-      <!-- <figure>
-        <h3>KL Gateway Residence</h3>
-        <router-link to="/building/KL Gateway Residence">
-          <img src="@/assets/kl-1.jpg" alt="@/assets/kl-1.jpg" />
-        </router-link>
-      </figure>
-      <figure>
-        <h3>Palmville Resort Condominium</h3>
-        <router-link to="/building">
-          <img src="@/assets/pal-resort.jpg" alt="@/assets/..." />
-        </router-link>
-      </figure>
-      :src="'@/assets/'+building.pic"
-      :src="require('@/assets/'+building.test)"
-       -->
 
       <figure v-for="(building, key) in payload" :key="key" >
         <h3>{{building.name}}</h3>
@@ -52,9 +37,10 @@ export default {
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-$color: red;
 figure {
   text-align: center;
+  margin:2rem auto;
+  width:fit-content;
 }
 img {
   cursor: pointer;

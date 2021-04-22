@@ -15,13 +15,13 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/BuildingReview.vue')
   },
   {
-    path: '/rate',
+    path: '/rate/:n/:b/:r',
     name: 'Rate',
     alias: '/',
     component: () => import(/* webpackChunkName: "about" */ '../views/RateReview.vue')
   },
   {
-    path: '/redirect-review',
+    path: '/redirect-review/:n/:b/:r',
     name: 'RedirectReview',
     component: () => import('../views/RedirectReview.vue')
   }

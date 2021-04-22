@@ -6,6 +6,8 @@ import { faAngleRight } from "@fortawesome/free-solid-svg-icons/faAngleRight";
 import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons/faAngleDoubleRight";
 import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons/faAngleDoubleDown";
 import { faAngleDoubleUp } from "@fortawesome/free-solid-svg-icons/faAngleDoubleUp";
+import { faThumbsUp } from "@fortawesome/free-solid-svg-icons/faThumbsUp";
+import { faPlus } from "@fortawesome/free-solid-svg-icons/faPlus";
 import { faStar } from "@fortawesome/free-solid-svg-icons/faStar";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
@@ -15,7 +17,9 @@ library.add(
   faAngleDoubleRight,
   faAngleDoubleDown,
   faAngleDoubleUp,
+  faThumbsUp,
   faStar,
+  faPlus,
 );
 
 createApp(App)
